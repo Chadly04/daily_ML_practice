@@ -5,7 +5,7 @@ Short Python challenges focused on practical machine learning and AI engineering
 | Day | Problem | Status | Key learning |
 | --- | --- | --- | --- |
 | 1 | [Logistic Regression: Customer Churn](Day01_LogisticRegression.ipynb) | Completed | Separate features and target, scale and encode with a pipeline, evaluate class predictions without unnecessary rounding. |
-| 2 | Data Cleaning and Feature Engineering | Completed; notebook upload pending | Impute numerical columns using the median, categorical values using the mode, create `tickets_per_month`, and verify missing values. |
+| 2 | [Data Cleaning and Feature Engineering](Day02_DataPreprocessing.ipynb) | Completed (reconstructed from conversation; original not yet supplied) | Impute numerical columns using the median, categorical values using the mode, create `tickets_per_month`, and verify missing values. |
 | 3 | [Decision Tree: Loan Approval](Day03_DecisionTree.ipynb) | Completed | Train and evaluate a classifier without a pipeline; understand why perfect scores on tiny test sets can be misleading. |
 
 ## Day 2: Work completed
@@ -14,7 +14,7 @@ Short Python challenges focused on practical machine learning and AI engineering
 - Added `tickets_per_month = support_tickets / months_active`.
 - Verified that all columns had zero missing values.
 
-The Day 2 original notebook has not yet been uploaded, so it is not recreated here as though it were the original.
+The Day 2 notebook was **reconstructed from the code and problem shared in chat**. It is clearly labeled and can be replaced with the original VS Code notebook if available.
 
 ## Daily routine
 1. Attempt the day's problem in VS Code/Jupyter.
