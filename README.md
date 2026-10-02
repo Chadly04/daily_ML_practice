@@ -16,7 +16,19 @@ ChatGPT is used to generate practice scenarios, synthetic datasets, concept ques
 - Improve at explaining results in clear language
 - Create polished projects that demonstrate consistent progress
 
-## Practice Roadmap
+## 10-Minute ML Problems
+
+I also complete short, focused daily exercises to build practical ML/AI engineering skills. [View the 10-minute problem tracker and notebooks](10-Minute-ML-Problems/README.md).
+
+| Day | Problem | Status |
+| ---: | --- | --- |
+| 1 | Logistic Regression — Small Customer Churn Dataset | Completed |
+| 2 | Missing Data and Feature Engineering | Completed (original notebook upload pending) |
+| 3 | Decision Tree — Small Loan Approval Dataset | Completed |
+
+These are **separate from the larger projects and roadmap below**, and I update the tracker as I finish each new daily problem.
+
+## Larger Project Practice Roadmap
 
 | Day | Model or topic | Example problem | Status |
 | ---: | --- | --- | --- |
@@ -33,7 +45,7 @@ ChatGPT is used to generate practice scenarios, synthetic datasets, concept ques
 
 ## Day 1: Customer Churn Prediction
 
-The first problem is a binary classification task. The goal is to predict whether a subscription customer will leave the company.
+This larger project is a binary classification task. The goal is to predict whether a subscription customer will leave the company.
 
 - **Target:** `churned`
 - **Class 0:** Customer stayed
@@ -96,16 +108,22 @@ For each practice problem, I will:
 
 ## Repository Organization
 
-As the repository grows, each practice problem will have its own folder:
+Larger practice projects have their own folders. The shorter daily exercises live in `10-Minute-ML-Problems/`:
 
 ```text
-daily-ml-practice/
-README.md
-day-01-customer-churn/
-  analysis.ipynb
-  customer_churn_practice.csv
-day-02-decision-tree/
-day-03-random-forest/
+daily_ML_practice/
+  README.md
+  10-Minute-ML-Problems/
+    README.md
+    Day01_LogisticRegression.ipynb
+    Day03_DecisionTree.ipynb
+  day-01-customer-churn/
+    01-exploratory-analysis.ipynb
+    02-logistic-regression.ipynb
+    customer_churn_practice.csv
+  day-02-LoanApproval/
+    decision-tree-loan-approval.ipynb
+    loan_data.csv
 ```
 
 ## Setup
