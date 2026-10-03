@@ -25,6 +25,7 @@ I also complete short, focused daily exercises to build practical ML/AI engineer
 | 1 | Logistic Regression — Small Customer Churn Dataset | Completed |
 | 2 | Missing Data and Feature Engineering | Completed (reconstructed notebook available) |
 | 3 | Decision Tree — Small Loan Approval Dataset | Completed |
+| 4 | NumPy — Feature Engineering and Array Stacking | Completed |
 
 These are **separate from the larger projects and roadmap below**, and I update the tracker as I finish each new daily problem.
 
@@ -118,6 +119,7 @@ daily_ML_practice/
     Day01_LogisticRegression.ipynb
     Day02_DataPreprocessing.ipynb
     Day03_DecisionTree.ipynb
+    Day04_NumPy_FeatureEngineering.ipynb
   day-01-customer-churn/
     01-exploratory-analysis.ipynb
     02-logistic-regression.ipynb
