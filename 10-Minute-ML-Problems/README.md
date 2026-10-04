@@ -8,6 +8,7 @@ Short Python challenges focused on practical machine learning and AI engineering
 | 2 | [Data Cleaning and Feature Engineering](Day02_DataPreprocessing.ipynb) | Completed (reconstructed from conversation; original not yet supplied) | Impute numerical columns using the median, categorical values using the mode, create `tickets_per_month`, and verify missing values. |
 | 3 | [Decision Tree: Loan Approval](Day03_DecisionTree.ipynb) | Completed | Train and evaluate a classifier without a pipeline; understand why perfect scores on tiny test sets can be misleading. |
 | 4 | [NumPy: Feature Engineering](Day04_NumPy_FeatureEngineering.ipynb) | Completed | Select columns with slicing, perform vectorized math, use `np.column_stack()` to add two features and check the `(6, 5)` shape. |
+| 5 | [Pandas: GroupBy and Churn Analysis](Day05_Pandas_GroupBy_ChurnAnalysis.ipynb) | Completed | Calculate overall and per-plan averages, derive churn rate with counts and the mean of binary labels, and format a grouped Series as percentages. |
 
 ## Day 2: Work completed
 - Filled missing ages and monthly fees using column medians.
@@ -22,6 +23,13 @@ The Day 2 notebook was **reconstructed from the code and problem shared in chat*
 - Learned to use NumPy indexing, inspect array dimensions with `.shape`, and combine new features using `np.column_stack()` instead of an array `.append()` method.
 - Created a final `(6, 5)` NumPy array.
 - Reflected on how ticket frequency might give a model more useful churn-related information than ticket counts alone.
+
+## Day 5: Work completed
+- Calculated overall and per-plan average monthly fees and support tickets using pandas.
+- Computed the overall churn rate both as `sum() / count()` and as `mean()`, obtaining 37.50%.
+- Used `groupby("plan")["churned"].mean()` to get Basic (66.67%), Premium (0.00%), and Standard (50.00%) churn rates.
+- Formatted each grouped churn rate using `.map('{:.2%}'.format)` without changing the underlying numeric calculation.
+- Reviewed and corrected spelling and phrasing in the notebook's Markdown cells.
 
 ## Daily routine
 1. Attempt the day's problem in VS Code/Jupyter.
