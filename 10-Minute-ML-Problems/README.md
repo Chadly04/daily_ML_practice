@@ -9,6 +9,7 @@ Short Python challenges focused on practical machine learning and AI engineering
 | 3 | [Decision Tree: Loan Approval](Day03_DecisionTree.ipynb) | Completed | Train and evaluate a classifier without a pipeline; understand why perfect scores on tiny test sets can be misleading. |
 | 4 | [NumPy: Feature Engineering](Day04_NumPy_FeatureEngineering.ipynb) | Completed | Select columns with slicing, perform vectorized math, use `np.column_stack()` to add two features and check the `(6, 5)` shape. |
 | 5 | [Pandas: GroupBy and Churn Analysis](Day05_Pandas_GroupBy_ChurnAnalysis.ipynb) | Completed | Calculate overall and per-plan averages, derive churn rate with counts and the mean of binary labels, and format a grouped Series as percentages. |
+| 6 | [Preprocessing Pipeline](Day06_Preprocessing_Pipeline.ipynb) | Completed | Build separate numeric and categorical preprocessing pipelines, impute missing values, scale and one-hot encode features, combine them with a `ColumnTransformer`, and train Logistic Regression end to end. |
 
 ## Day 2: Work completed
 - Filled missing ages and monthly fees using column medians.
@@ -30,6 +31,14 @@ The Day 2 notebook was **reconstructed from the code and problem shared in chat*
 - Used `groupby("plan")["churned"].mean()` to get Basic (66.67%), Premium (0.00%), and Standard (50.00%) churn rates.
 - Formatted each grouped churn rate using `.map('{:.2%}'.format)` without changing the underlying numeric calculation.
 - Reviewed and corrected spelling and phrasing in the notebook's Markdown cells.
+
+## Day 6: Work completed
+- Split features and target, then created train and test sets.
+- Selected numerical and categorical columns by data type.
+- Used `SimpleImputer(strategy="median")` and `StandardScaler()` for numerical data.
+- Used `SimpleImputer(strategy="most_frequent")` and `OneHotEncoder(handle_unknown="ignore")` for categorical data.
+- Combined both preprocessing branches with `ColumnTransformer` and placed them with `LogisticRegression()` in one pipeline.
+- The tiny 2-row test set produced 0.00 accuracy after median imputation; the key lesson is that correct code can still give unstable metrics on very small datasets.
 
 ## Daily routine
 1. Attempt the day's problem in VS Code/Jupyter.
