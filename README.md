@@ -28,6 +28,7 @@ I also complete short, focused daily exercises to build practical ML/AI engineer
 | 4 | NumPy — Feature Engineering and Array Stacking | Completed |
 | 5 | Pandas — GroupBy and Customer Churn Analysis | Completed |
 | 6 | Scikit-learn — Missing Data and Preprocessing Pipeline | Completed |
+| 7 | Cross-Validation — Logistic Regression vs. Decision Tree | Completed |
 
 These are **separate from the larger projects and roadmap below**, and I update the tracker as I finish each new daily problem.
 
@@ -124,6 +125,7 @@ daily_ML_practice/
     Day04_NumPy_FeatureEngineering.ipynb
     Day05_Pandas_GroupBy_ChurnAnalysis.ipynb
     Day06_Preprocessing_Pipeline.ipynb
+    Day07_CrossValidation_ModelComparison.ipynb
   day-01-customer-churn/
     01-exploratory-analysis.ipynb
     02-logistic-regression.ipynb
