@@ -1,0 +1,5 @@
+outs:
+- md5: fce7b34055515eb7a4b887680659b44c
+  size: 35601
+  hash: md5
+  path: new3.ipynb
