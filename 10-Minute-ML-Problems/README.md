@@ -10,6 +10,7 @@ Short Python challenges focused on practical machine learning and AI engineering
 | 4 | [NumPy: Feature Engineering](Day04_NumPy_FeatureEngineering.ipynb) | Completed | Select columns with slicing, perform vectorized math, use `np.column_stack()` to add two features and check the `(6, 5)` shape. |
 | 5 | [Pandas: GroupBy and Churn Analysis](Day05_Pandas_GroupBy_ChurnAnalysis.ipynb) | Completed | Calculate overall and per-plan averages, derive churn rate with counts and the mean of binary labels, and format a grouped Series as percentages. |
 | 6 | [Preprocessing Pipeline](Day06_Preprocessing_Pipeline.ipynb) | Completed | Build separate numeric and categorical preprocessing pipelines, impute missing values, scale and one-hot encode features, combine them with a `ColumnTransformer`, and train Logistic Regression end to end. |
+| 7 | [Cross-Validation and Model Comparison](Day07_CrossValidation_ModelComparison.ipynb) | Completed | Use 5-fold cross-validation to evaluate Logistic Regression and a Decision Tree across different portions of the data, compare their average accuracy, and understand why repeated evaluation is more reliable than one tiny split. |
 
 ## Day 2: Work completed
 - Filled missing ages and monthly fees using column medians.
@@ -39,6 +40,14 @@ The Day 2 notebook was **reconstructed from the code and problem shared in chat*
 - Used `SimpleImputer(strategy="most_frequent")` and `OneHotEncoder(handle_unknown="ignore")` for categorical data.
 - Combined both preprocessing branches with `ColumnTransformer` and placed them with `LogisticRegression()` in one pipeline.
 - The tiny 2-row test set produced 0.00 accuracy after median imputation; the key lesson is that correct code can still give unstable metrics on very small datasets.
+
+## Day 7: Work completed
+- Separated the feature columns from the `churned` target.
+- Created Logistic Regression and Decision Tree models.
+- Used `cross_val_score()` with 5 folds and accuracy scoring instead of one train/test split.
+- Compared all five scores and the average accuracy for each model.
+- Both models earned 1.00 average accuracy on the small dataset.
+- Learned that testing on different portions of the data gives a more reliable performance estimate than testing only once.
 
 ## Daily routine
 1. Attempt the day's problem in VS Code/Jupyter.
