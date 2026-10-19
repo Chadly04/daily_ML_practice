@@ -14,7 +14,9 @@ Short Python challenges focused on practical machine learning and AI engineering
 | 8 | [Hyperparameter Tuning with GridSearchCV](Day08_HyperparameterTuning_GridSearchCV.ipynb) | Completed | Keep the test set untouched, use 5-fold cross-validation to tune Logistic Regression's `C`, and compare the tuned pipeline against the default model. |
 | 9 | [Missing Data Pipeline](Day09_Missing_Data_Pipeline.ipynb) | Completed | Handle missing numerical and categorical data inside a preprocessing pipeline. |
 | 10 | [Feature Engineering and Regression](Day10_Feature_Engineering.ipynb) | Completed | Create useful features, evaluate Linear Regression with MAE, RMSE, and R², and compare results with and without engineered features. |
-| 11 | [Wine Classification with KNN](Day11_Wine_Classification.ipynb) | Ready | Practice multiclass classification, feature scaling, KNN, classification metrics, and testing different values of K. |
+| 11 | [Wine Classification with KNN](Day11_Wine_Classification.ipynb) | Completed | Practice multiclass classification, feature scaling, KNN, classification metrics, and testing different values of K. |
+
+| 12 | [Regression Model Comparison](Day12_Regression_Model_Comparison.ipynb) | Ready | Compare a mean baseline, Linear Regression, and KNN regression on a real dataset using MAE, RMSE, and R². |
 
 ## Day 2: Work completed
 - Filled missing ages and monthly fees using column medians.
@@ -68,11 +70,20 @@ The Day 2 notebook was **reconstructed from the code and problem shared in chat*
 - Compared models with and without engineered features.
 - Learned that engineered features can help without producing a large improvement.
 
-## Day 11: Planned work
-- Use the scikit-learn wine dataset instead of another customer churn dataset.
-- Build a multiclass K-Nearest Neighbors classifier.
-- Practice accuracy, macro precision, macro recall, macro F1, and a confusion matrix.
-- Compare several values of K and explain how K changes the model.
+## Day 11: Work completed
+- Explored the wine dataset and identified three target classes.
+- Built a StandardScaler and KNeighborsClassifier pipeline using a stratified split.
+- Practiced accuracy, macro precision, recall, F1, and confusion-matrix interpretation.
+- Corrected the train/test assignment order and learned that metric functions take actual labels before predictions.
+- Reused the pipeline with set_params() to compare K values.
+- Learned how neighbors vote, why scaling matters, and why larger K does not always improve predictions.
+- Practiced a classification report and explained the concepts in a reflection.
+
+## Day 12: Planned work
+- Return to regression using the built-in diabetes dataset.
+- Compare a mean-prediction baseline with Linear Regression and KNN regression.
+- Interpret MAE in target score units and compare MAE, RMSE, and R².
+- Optionally select K using training-only cross-validation.
 
 ## Daily routine
 1. Attempt the day's problem in VS Code/Jupyter.
