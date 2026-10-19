@@ -30,6 +30,9 @@ I also complete short, focused daily exercises to build practical ML/AI engineer
 | 6 | Scikit-learn — Missing Data and Preprocessing Pipeline | Completed |
 | 7 | Cross-Validation — Logistic Regression vs. Decision Tree | Completed |
 | 8 | Hyperparameter Tuning — Logistic Regression with GridSearchCV | Completed |
+| 9 | Missing Data and Categorical Preprocessing Pipeline | Completed |
+| 10 | Feature Engineering and Linear Regression | Completed |
+| 11 | Wine Classification with K-Nearest Neighbors | Ready |
 
 These are **separate from the larger projects and roadmap below**, and I update the tracker as I finish each new daily problem.
 
@@ -128,6 +131,9 @@ daily_ML_practice/
     Day06_Preprocessing_Pipeline.ipynb
     Day07_CrossValidation_ModelComparison.ipynb
     Day08_HyperparameterTuning_GridSearchCV.ipynb
+    Day09_Missing_Data_Pipeline.ipynb
+    Day10_Feature_Engineering.ipynb
+    Day11_Wine_Classification.ipynb
   day-01-customer-churn/
     01-exploratory-analysis.ipynb
     02-logistic-regression.ipynb
