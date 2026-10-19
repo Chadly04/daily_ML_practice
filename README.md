@@ -32,7 +32,8 @@ I also complete short, focused daily exercises to build practical ML/AI engineer
 | 8 | Hyperparameter Tuning — Logistic Regression with GridSearchCV | Completed |
 | 9 | Missing Data and Categorical Preprocessing Pipeline | Completed |
 | 10 | Feature Engineering and Linear Regression | Completed |
-| 11 | Wine Classification with K-Nearest Neighbors | Ready |
+| 11 | Wine Classification with K-Nearest Neighbors | Completed |
+| 12 | Regression — Baseline, Linear Regression, and KNN | Ready |
 
 These are **separate from the larger projects and roadmap below**, and I update the tracker as I finish each new daily problem.
 
@@ -134,6 +135,7 @@ daily_ML_practice/
     Day09_Missing_Data_Pipeline.ipynb
     Day10_Feature_Engineering.ipynb
     Day11_Wine_Classification.ipynb
+    Day12_Regression_Model_Comparison.ipynb
   day-01-customer-churn/
     01-exploratory-analysis.ipynb
     02-logistic-regression.ipynb
