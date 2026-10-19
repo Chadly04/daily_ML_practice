@@ -12,6 +12,9 @@ Short Python challenges focused on practical machine learning and AI engineering
 | 6 | [Preprocessing Pipeline](Day06_Preprocessing_Pipeline.ipynb) | Completed | Build separate numeric and categorical preprocessing pipelines, impute missing values, scale and one-hot encode features, combine them with a `ColumnTransformer`, and train Logistic Regression end to end. |
 | 7 | [Cross-Validation and Model Comparison](Day07_CrossValidation_ModelComparison.ipynb) | Completed | Use 5-fold cross-validation to evaluate Logistic Regression and a Decision Tree across different portions of the data, compare their average accuracy, and understand why repeated evaluation is more reliable than one tiny split. |
 | 8 | [Hyperparameter Tuning with GridSearchCV](Day08_HyperparameterTuning_GridSearchCV.ipynb) | Completed | Keep the test set untouched, use 5-fold cross-validation to tune Logistic Regression's `C`, and compare the tuned pipeline against the default model. |
+| 9 | [Missing Data Pipeline](Day09_Missing_Data_Pipeline.ipynb) | Completed | Handle missing numerical and categorical data inside a preprocessing pipeline. |
+| 10 | [Feature Engineering and Regression](Day10_Feature_Engineering.ipynb) | Completed | Create useful features, evaluate Linear Regression with MAE, RMSE, and R², and compare results with and without engineered features. |
+| 11 | [Wine Classification with KNN](Day11_Wine_Classification.ipynb) | Ready | Practice multiclass classification, feature scaling, KNN, classification metrics, and testing different values of K. |
 
 ## Day 2: Work completed
 - Filled missing ages and monthly fees using column medians.
@@ -57,6 +60,19 @@ The Day 2 notebook was **reconstructed from the code and problem shared in chat*
 - Used `GridSearchCV` with 5-fold cross-validation to test `C` values of 0.01, 0.1, 1, 10, and 100.
 - Found `C=0.1` performed best, with about 98.02% average cross-validation accuracy.
 - The default model scored about 98.25% test accuracy, while the tuned model scored about 97.37%; learned that the best average cross-validation setting does not always score higher on one test split.
+
+## Day 10: Work completed
+- Created `spend_per_visit` and `loyal_customer` from existing customer features.
+- Built a preprocessing and Linear Regression pipeline.
+- Evaluated the model using MAE, RMSE, and R².
+- Compared models with and without engineered features.
+- Learned that engineered features can help without producing a large improvement.
+
+## Day 11: Planned work
+- Use the scikit-learn wine dataset instead of another customer churn dataset.
+- Build a multiclass K-Nearest Neighbors classifier.
+- Practice accuracy, macro precision, macro recall, macro F1, and a confusion matrix.
+- Compare several values of K and explain how K changes the model.
 
 ## Daily routine
 1. Attempt the day's problem in VS Code/Jupyter.
